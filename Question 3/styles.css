@@ -1,0 +1,16 @@
+@import url(reset.css);
+
+.question{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.question p{
+    width: 46rem;
+    font-size: 1rem;
+    text-align: justify;
+}
