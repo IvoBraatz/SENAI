@@ -5,10 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Senai Question 3</title>
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
     <div class="question">
+        <h1>Minhas Linguagens de Programação Favoritas</h1>
+
+        <div class="content-lang" id="js-section">
+            <img class="lang-img" src="img/js.png" alt="JavaScript Logo">
+            <p>JavaScript é uma linguagem de programação amplamente utilizada para o desenvolvimento de aplicações web interativas. Criada no início da década de 1990, a linguagem foi inicialmente concebida para tornar as páginas web mais dinâmicas, permitindo a manipulação do conteúdo do lado do cliente. Desde então, o JavaScript se expandiu significativamente e agora é empregado em uma variedade de contextos, incluindo o desenvolvimento de servidores com o Node.js.</p><br>
+
+            <p>Uma das características distintivas do JavaScript é sua natureza de alto nível e orientada a objetos, o que facilita a criação de código flexível e fácil de entender. A linguagem suporta programação assíncrona, crucial para operações não bloqueantes em aplicações web, proporcionando uma experiência mais ágil aos usuários.</p><br>
+
+            <p>O JavaScript é interpretado pelos navegadores web, permitindo a execução de scripts diretamente no ambiente do cliente. Essa capacidade é fundamental para a criação de interfaces de usuário dinâmicas e interativas, tornando o JavaScript essencial para o desenvolvimento front-end.</p><br>
+
+            <p>Com o advento do ECMAScript, o padrão que define a especificação do JavaScript, a linguagem passou por atualizações regulares, introduzindo novos recursos e melhorias de desempenho. Além disso, o uso de bibliotecas e frameworks populares, como React, Angular e Vue.js, simplifica o desenvolvimento de aplicações mais complexas.</p><br>
+
+            <p>O ecossistema JavaScript é diversificado, com uma comunidade ativa e uma abundância de recursos, bibliotecas e ferramentas. Essa vasta adoção faz do JavaScript uma escolha fundamental para desenvolvedores envolvidos na criação de experiências interativas e dinâmicas na web.</p>
+            <div class="btn-section">
+                <button class="toggle-button" onclick="toggleContent('js-section')">Ler mais</button>
+            </div>
+        </div>
         
+        <div class="content-lang" id="csharp-section">
+            <img class="lang-img" src="img/csharp.png" alt="C# Logo">
+            <p>C# (pronunciado "C sharp") é uma linguagem de programação moderna e orientada a objetos desenvolvida pela Microsoft. Criada no início dos anos 2000, ela se destaca por sua versatilidade e robustez, sendo amplamente utilizada no desenvolvimento de uma variedade de aplicativos, desde desktop até aplicações web e móveis.</p><br>
+
+            <p>A sintaxe do C# é inspirada em outras linguagens como C++ e Java, o que facilita a transição para programadores familiarizados com essas plataformas. Uma das principais características do C# é a sua integração com a plataforma .NET da Microsoft, proporcionando uma ampla gama de bibliotecas e frameworks para acelerar o desenvolvimento de software.</p><br>
+                
+            <p>A linguagem C# é conhecida por seu sistema de tipos estáticos, o que contribui para a detecção precoce de erros durante a compilação, aumentando a confiabilidade do código. Além disso, o C# suporta programação assíncrona, permitindo o desenvolvimento eficiente de aplicativos que exigem manipulação de tarefas concorrentes.</p><br>
+                
+            <p>O ecossistema de desenvolvimento do C# é robusto, com o Visual Studio como a principal IDE (Ambiente de Desenvolvimento Integrado), oferecendo ferramentas poderosas para depuração, análise de código e construção de interfaces gráficas de usuário. Com uma comunidade ativa e suporte contínuo da Microsoft, o C# permanece como uma escolha popular para desenvolvedores em busca de uma linguagem moderna, eficiente e orientada a objetos.</p>
+            <div class="btn-section">
+                <button class="toggle-button" onclick="toggleContent('csharp-section')">Ler mais</button>
+            </div>
+        </div>
+        
+        <div class="content-lang" id="css-section">
+            <img class="lang-img" src="img/css.png" alt="CSS Logo">
+            <p>CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada em conjunto com HTML para definir a apresentação visual de páginas web. Criado para separar a estrutura do conteúdo (HTML) da sua apresentação visual, o CSS proporciona um controle detalhado sobre a aparência de elementos HTML em uma página.</p><br>
+
+            <p>A estrutura do CSS consiste em regras de estilo que especificam como os elementos HTML devem ser exibidos. Isso inclui propriedades como cor, fonte, tamanho, espaçamento e posicionamento. A abordagem "cascata" no CSS significa que várias regras podem ser aplicadas a um elemento, e o navegador irá seguir uma ordem específica para determinar qual regra prevalecerá.</p><br>
+
+            <p>A flexibilidade do CSS é evidenciada pela capacidade de criar layouts responsivos, adaptando-se a diferentes dispositivos e tamanhos de tela. Media queries e flexbox são recursos fundamentais para alcançar layouts dinâmicos que se ajustam de acordo com as condições do dispositivo.</p><br>
+
+            <p>Além disso, o CSS é frequentemente combinado com pré-processadores como Sass ou Less, que adicionam funcionalidades extras, como variáveis, funções e mixins, facilitando a manutenção e organização do código.</p><br>
+
+            <p>O CSS3 introduziu uma série de novos recursos, incluindo animações, transições, sombras e gradientes, proporcionando aos desenvolvedores maior controle sobre a estilização e interatividade das páginas web.</p><br>
+
+            <p>A colaboração eficaz entre HTML, JavaScript e CSS permite que desenvolvedores criem experiências web ricas e visualmente atraentes, tornando o CSS uma parte essencial no toolkit de qualquer desenvolvedor front-end.</p>
+            <div class="btn-section">
+                <button class="toggle-button" onclick="toggleContent('css-section')">Ler mais</button>
+            </div>
+        </div>
+        <footer>
+            <p>Desenvolvido por Ivo Braatz</p>
+        </footer>
+        <script src="script.js"></script>
     </div>
 </body>
 </html>
