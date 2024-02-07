@@ -1,0 +1,93 @@
+@import url(reset.css);
+@import url("https://use.typekit.net/jqe2tos.css");
+
+
+body{
+    font-family: "monarcha", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #474747;
+    color: #dbdbdb;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    border-bottom: 3px solid #111111;
+    box-shadow: 0px 9px 6px #111111;
+}
+
+.page-title{
+    font-size: 2rem;
+    margin-bottom: .4rem;
+}
+
+.menu-item{
+    text-decoration: none;
+    color: #818181;
+}
+
+.menu-item:hover{
+    color: #a9a9a9;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+
+main {
+    padding: 20px;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    width: 24rem;
+    gap: .5rem;
+    margin: 2rem 0;
+    border: 3px solid #111111;
+    padding: 1rem;
+    box-shadow: 11px 9px 6px #111111;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    background-color: #818181;
+}
+
+.post-title{
+    font-size: 1.4rem;
+}
+
+.post-description{
+    font-size: .8rem;
+}
+
+.post-image{
+    width: 24rem;
+    transition: .8s ease;
+    border: 3px solid #111111;
+}
+
+.post-image:hover{
+    filter: brightness(30%);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    bottom: 0;
+    width: 100%;
+}
