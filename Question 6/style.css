@@ -1,4 +1,6 @@
 @import url(reset.css);
+@import url(contato.css);
+@import url(responsive.css);
 @import url("https://use.typekit.net/jqe2tos.css");
 
 :root{
@@ -17,8 +19,16 @@ body{
     font-style: normal;
     background-color: var(--primary-background);
     color: var(--primary-fontColor);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    
 }
 
+html {
+	scroll-behavior: smooth;
+}
 
 header {
     padding: 1em;
@@ -53,50 +63,136 @@ nav ul li {
     margin-right: 10px;
 }
 
+main{
+    width: 100%;
+    display: flex;
+    margin: 1rem 0;
+    justify-content: center;
+    align-items: center;
+}
 
-main {
+.cards{
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    margin: 1.2rem 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px var(--primary-shadow);
+    transition: transform 1s ease;
+}
+
+.card-header {
+    padding: 20px;
+    background-color: var(--card-background);
+    color: var(--secondary-color);
+}
+
+.style-1{
+    background-color: var(--color-emphasis);
+}
+
+.style-2{
+    background-color: var(--secondary-emphasis);
+}
+
+.style-3{
+    background-color: var(--emphasis-hover);
+}
+
+.card-header h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.card-content {
     padding: 20px;
 }
 
-.post {
-    color: var(--secondary-color);
+.card-content p {
+    margin-bottom: 10px;
+}
+
+.card-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Efeito de hover */
+.card:hover {
+    transform: scale(1.05);
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.emphasis{
     display: flex;
     flex-direction: column;
-    width: 24rem;
+    width: 100%;
+    align-items: center;
+}
+
+.emphasis-card{
+    display: flex;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--primary-shadow);
+}
+
+.emphasis-content{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
     gap: 1rem;
-    margin: 2rem 0;
-    padding: 1rem;
-    box-shadow: 5px 4px 3px var(--primary-shadow);
     justify-content: center;
     align-items: center;
+}
+.emphasis-title{
+    font-size: 1.6rem;
+    text-align: center;
+}
+.emphasis-paragraph{
     text-align: justify;
-    background: rgb(42,63,145);
-    background: linear-gradient(90deg, rgba(42,63,145,1) 0%, rgba(2,134,123,1) 84%);
+}
+.emphasis-sub{
+    padding: 1rem;
+    width: 8rem;
+    border: 2px solid var(--secondary-emphasis);
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
 }
 
-.post-title{
-    font-size: 2rem;
+.emphasis-img{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.post-description{
-    font-size: 1.2rem;
-}
-
-.post-image{
-    width: 24rem;
-    transition: .8s ease;
-    border: 3px solid #111111;
-}
-
-.post-image:hover{
-    filter: brightness(30%);
+.emphasis-img img{
+    width: 20rem;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 footer {
     color: var(--color-emphasis);
     text-align: center;
-    padding: 2rem 0;
+    padding: 3rem 0;
     bottom: 0;
     width: 100%;
     box-shadow: 0 -2px 5px var(--primary-shadow);
 }
+
+

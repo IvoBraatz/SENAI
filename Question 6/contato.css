@@ -1,0 +1,52 @@
+.container {
+    width: 50rem;
+    height: 32rem;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin: 4rem 0;
+  }
+
+  .form-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+
+  input{
+    border: none;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1.5px solid #171717;
+    box-sizing: border-box;
+  }
+
+
+  .terms {
+    width: 40rem;
+    margin-top: 15px;
+    display: flex;
+    justify-content:left;
+  }
+
+  .form-check-input{
+    width: 1rem;
+  }
+
+  .terms label {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }

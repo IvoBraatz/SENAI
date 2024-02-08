@@ -1,0 +1,204 @@
+@media screen and (max-width: 480px) {
+
+    main{
+        flex-direction: column;
+    }
+
+    .card{
+        max-width: 24rem;
+    }
+
+    .emphasis-card{
+        max-width: 24rem;
+        flex-direction: column;
+    }
+
+    .emphasis-content{
+        margin: 0 1rem;
+        
+    }
+
+    .container{
+        max-width: 20rem;
+    }
+
+    .terms{
+        width: 16rem;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 580px) {
+    main{
+        flex-direction: column;
+    }
+
+    .card{
+        max-width: 28rem;
+    }
+
+    .emphasis-card{
+        max-width: 28rem;
+        flex-direction: column;
+    }
+
+    .emphasis-content{
+        margin: 0 1rem;
+        
+    }
+    .container{
+        max-width: 24rem;
+    }
+
+    .terms{
+        width: 16rem;
+    }
+}
+
+@media screen and (min-width: 581px) and (max-width: 780px) {
+    main{
+        flex-direction: column;
+    }
+
+    .card{
+        width: 34rem;
+    }
+
+    .emphasis-card{
+        max-width: 34rem;
+        flex-direction: column;
+    }
+
+    .container{
+        max-width: 28rem;
+    }
+
+    .terms{
+        width: 16rem;
+    }
+
+}
+
+@media screen and (min-width: 781px) and (max-width: 900px) {
+    
+
+    .card{
+        width: 16rem;
+    }
+
+    .emphasis-card{
+        max-width: 28rem;
+        flex-direction: column;
+    }
+    .container{
+        max-width: 36rem;
+    }
+
+    .terms{
+        width: 16rem;
+    }
+
+}
+
+@media screen and (min-width: 901px) and (max-width: 1000px) {
+    
+
+    .card{
+        width: 22rem;
+    }
+
+    .emphasis-card{
+        max-width: 30rem;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1100px) {
+    
+
+    .card{
+        width: 20rem;
+    }
+
+    .emphasis-card{
+        max-width: 38rem;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1200px) {
+    
+
+    .card{
+        width: 26rem;
+    }
+
+    .emphasis-card{
+        max-width: 38rem;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width:1400px) {
+    
+
+    .card{
+        width: 24rem;
+    }
+
+    .emphasis-card{
+        max-width: 46rem;
+    }
+}
+
+@media screen and (min-width: 1401px) and (max-width: 1600px) {
+    .emphasis{
+        height: 110rem;
+    }
+
+    .cards{
+        height: 110rem;
+    }
+
+    .card{
+        width: 26rem;
+    }
+}
+
+@media screen and (min-width: 1601px) and (max-width: 1800px)  {
+    .emphasis{
+        height: 110rem;
+    }
+
+    .emphasis-card{
+        max-width: 70rem;
+    }
+
+    .cards{
+        height: 110rem;
+    }
+
+    .card{
+        width: 28rem;
+    }
+}
+
+@media screen and (min-width: 1801px) and (max-width: 1920px)  {
+   
+    .emphasis{
+        width: 50%;
+        height: 110rem;
+    }
+
+    .emphasis-card{
+        max-width: 74rem;
+    }
+
+    .cards{
+        width: 50%;
+        height: 110rem;
+    }
+
+    .card{
+        width: 28rem;
+    }
+}
