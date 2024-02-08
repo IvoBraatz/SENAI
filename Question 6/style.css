@@ -1,37 +1,45 @@
 @import url(reset.css);
 @import url("https://use.typekit.net/jqe2tos.css");
 
+:root{
+    --color-emphasis: rgb(59,57,138);
+    --secondary-emphasis: rgb(37,183,219);
+    --emphasis-hover: rgb(41,166,145);
+    --primary-background: rgb(255, 255, 255);
+    --primary-shadow: rgba(0, 0, 0, 0.7);
+    --primary-fontColor: rgb(6,48,55);
+    --secondary-color: rgb(255,255,255);
+}
 
 body{
     font-family: "monarcha", serif;
     font-weight: 400;
     font-style: normal;
-    background-color: #474747;
-    color: #dbdbdb;
+    background-color: var(--primary-background);
+    color: var(--primary-fontColor);
 }
 
 
 header {
-    background-color: #333;
-    color: #fff;
     padding: 1em;
     text-align: center;
-    border-bottom: 3px solid #111111;
-    box-shadow: 0px 9px 6px #111111;
+    box-shadow: 0 0 7px var(--primary-shadow);
 }
 
 .page-title{
-    font-size: 2rem;
+    color: var(--color-emphasis);
+    font-size: 4rem;
     margin-bottom: .4rem;
 }
 
 .menu-item{
+    font-size: 2rem;
     text-decoration: none;
-    color: #818181;
+    color: var(--secondary-emphasis);
 }
 
 .menu-item:hover{
-    color: #a9a9a9;
+    color: var(--emphasis-hover);
 }
 
 nav ul {
@@ -51,26 +59,27 @@ main {
 }
 
 .post {
+    color: var(--secondary-color);
     display: flex;
     flex-direction: column;
     width: 24rem;
-    gap: .5rem;
+    gap: 1rem;
     margin: 2rem 0;
-    border: 3px solid #111111;
     padding: 1rem;
-    box-shadow: 11px 9px 6px #111111;
+    box-shadow: 5px 4px 3px var(--primary-shadow);
     justify-content: center;
     align-items: center;
     text-align: justify;
-    background-color: #818181;
+    background: rgb(42,63,145);
+    background: linear-gradient(90deg, rgba(42,63,145,1) 0%, rgba(2,134,123,1) 84%);
 }
 
 .post-title{
-    font-size: 1.4rem;
+    font-size: 2rem;
 }
 
 .post-description{
-    font-size: .8rem;
+    font-size: 1.2rem;
 }
 
 .post-image{
@@ -84,10 +93,10 @@ main {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    color: var(--color-emphasis);
     text-align: center;
     padding: 2rem 0;
     bottom: 0;
     width: 100%;
+    box-shadow: 0 -2px 5px var(--primary-shadow);
 }
