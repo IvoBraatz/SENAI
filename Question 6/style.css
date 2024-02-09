@@ -1,6 +1,7 @@
 @import url(reset.css);
 @import url(contato.css);
 @import url(responsive.css);
+@import url(cyber.html);
 @import url("https://use.typekit.net/jqe2tos.css");
 
 :root{
@@ -11,6 +12,7 @@
     --primary-shadow: rgba(0, 0, 0, 0.7);
     --primary-fontColor: rgb(6,48,55);
     --secondary-color: rgb(255,255,255);
+    --background-buttonHover: rgba(37, 183, 219, 0.3)
 }
 
 body{
@@ -53,9 +55,11 @@ header {
 }
 
 nav ul {
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    justify-content: space-around;
 }
 
 nav ul li {
@@ -171,6 +175,10 @@ main{
     border-radius: 10px;
     background-color: transparent;
     cursor: pointer;
+}
+
+.emphasis-sub:hover{
+    background-color: var(--background-buttonHover);
 }
 
 .emphasis-img{

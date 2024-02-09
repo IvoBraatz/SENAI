@@ -1,0 +1,22 @@
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 48rem;
+    margin: 5rem auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 7px var(--primary-shadow);
+}
+
+.content-section {
+    margin-bottom: 30px;
+}
+
+.content-section h2 {
+    color: #333;
+}
+
+.content-section p {
+    color: #555;
+}

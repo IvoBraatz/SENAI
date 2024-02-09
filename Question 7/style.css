@@ -1,0 +1,138 @@
+@import url(reset.css);
+@import url(contato.css);
+@import url(responsive.css);
+@import url(cyber.html);
+@import url("https://use.typekit.net/jqe2tos.css");
+
+:root{
+    --color-emphasis: rgb(59,57,138);
+    --secondary-emphasis: rgb(37,183,219);
+    --emphasis-hover: rgb(41,166,145);
+    --primary-background: rgb(255, 255, 255);
+    --primary-shadow: rgba(0, 0, 0, 0.7);
+    --primary-fontColor: rgb(6,48,55);
+    --secondary-color: rgb(255,255,255);
+    --background-buttonHover: rgba(37, 183, 219, 0.3)
+}
+
+body{
+    font-family: "monarcha", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--primary-background);
+    color: var(--primary-fontColor);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+}
+
+header {
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 0 7px var(--primary-shadow);
+}
+
+.page-title{
+    color: var(--color-emphasis);
+    font-size: 4rem;
+    margin-bottom: .4rem;
+}
+
+.menu-item{
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--secondary-emphasis);
+}
+
+.menu-item:hover{
+    color: var(--emphasis-hover);
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* -----FORMULARIO DE CADASTRO----- */
+
+.cadastro-form {
+    max-width: 26rem;
+    margin: 5rem auto;
+    padding: 2rem;
+    border: 1.5px solid var(--primary-shadow);
+    border-radius: 10px;
+    box-shadow: 0 0 7px var(--primary-shadow);
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select{
+    border: none;
+}
+
+.input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border-bottom: 1.5px solid var(--primary-shadow);
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    align-items: center;
+}
+
+.checkbox {
+    margin-right: 5px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.submit-button {
+    background-color: var(--color-emphasis);
+    color: var(--secondary-color);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: var(--emphasis-hover);
+}
+
+footer {
+    color: var(--color-emphasis);
+    text-align: center;
+    padding: 3rem 0;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px var(--primary-shadow);
+}
+
+
