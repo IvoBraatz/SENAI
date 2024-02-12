@@ -135,4 +135,18 @@ footer {
     box-shadow: 0 -2px 5px var(--primary-shadow);
 }
 
+@media screen and (max-width: 768px) {
+    .cadastro-form {
+        width: 20rem;
+        padding: 2rem;
+    }
 
+}
+
+@media screen and (max-width: 408px) {
+    .cadastro-form {
+        width: 16rem;
+        padding: 2rem;
+    }
+
+}

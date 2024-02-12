@@ -1,16 +1,30 @@
 @import url(reset.css);
 
 .question{
-    margin-top: 2rem;
-    width: 100%;
+    margin: 2rem;
+    padding: 0 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.question p{
-    width: 46rem;
+.question p {
+    width: 100%;
+    max-width: 46rem;
     font-size: 1rem;
     text-align: justify;
+    margin: 0 auto; 
+}
+
+@media screen and (max-width: 600px) {
+    .question p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .question p {
+        font-size: 0.8rem;
+    }
 }

@@ -1,56 +1,61 @@
 @import url(reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-body{
+body {
     background-color: #F2E7DC;
     font-family: 'Montserrat', sans-serif;
 }
 
-.question{
+.question {
     margin-top: 2rem;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
     flex-direction: column;
 }
 
-.content-lang p{
-    width: 46rem;
+.content-lang p {
+    width: 100%;
+    max-width: 46rem;
     font-size: 1rem;
     text-align: justify;
 }
 
-h1{
+h1 {
     text-transform: uppercase;
     font-size: 1.8rem;
+    text-align: center;
 }
 
-.lang-img{
-    width: 10rem;
+.lang-img {
+    width: 100%; /* Adjusted for responsiveness */
+    max-width: 10rem; /* Maximum width for large screens */
 }
 
-br{
+br {
     margin-bottom: 1rem;
 }
 
-.content-lang{
+.content-lang {
     display: flex;
     flex-direction: column;
-    padding: .5rem 2rem 4rem 2rem;
+    padding: .5rem 2rem 2rem 2rem; /* Adjusted padding for smaller screens */
     position: relative;
-    max-height: 14rem;
+    max-height: 100%; /* Adjusted for responsiveness */
     overflow: hidden;
     align-items: center;
     text-align: center;
     transition: max-height 0.3s ease;
-    box-shadow:  0 0 15px #000;
-    margin: 2rem 0;
+    box-shadow: 0 0 15px #000;
+    margin: 2rem 1rem;
     border-radius: .4rem;
     background-color: #f1f1f1;
+    
 }
 
-.btn-section{
+.btn-section {
     position: absolute;
     width: 100%;
     height: 3rem;
@@ -74,13 +79,12 @@ br{
     transition: background-color 0.3s ease;
     bottom: .5rem;
 }
-  
+
 .toggle-button:hover {
     box-shadow: 0 0 5px #313131;
 }
 
-
-footer{
+footer {
     margin-top: 2rem;
     display: flex;
     height: 4rem;
@@ -88,4 +92,33 @@ footer{
 
 footer p {
     text-align: center;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+    .content-lang p {
+        font-size: 0.9rem;
+    }
+
+    .lang-img {
+        max-width: 50%;
+    }
+
+    .content-lang {
+        padding: .5rem 1rem 2rem 1rem; /* Adjusted padding for smaller screens */
+        
+    }
+
+    .btn-section {
+        height: 2.5rem; /* Adjusted height for smaller screens */
+    }
+
+    .toggle-button {
+        font-size: 14px; /* Adjusted font size for smaller screens */
+        bottom: .3rem; /* Adjusted position for smaller screens */
+    }
+
+    footer {
+        height: 3rem; /* Adjusted height for smaller screens */
+    }
 }
